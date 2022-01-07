@@ -3,4 +3,4 @@
 set -e
 set -x
 
-docker buildx build --file docker/placeholder/Dockerfile --platform linux/amd64,linux/arm64,linux/arm/v6,linux/arm/v7 -t drone/placeholder:latest --push .
+docker buildx build --file docker/placeholder/Dockerfile --platform linux/amd64,linux/ppc64le,linux/arm64,linux/arm/v6,linux/arm/v7 -t drone/placeholder:latest --push .
